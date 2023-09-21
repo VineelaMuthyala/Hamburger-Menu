@@ -6,5 +6,44 @@
   background-color: white;
 }
 .website-logo {
-  width: 3%;
+  width: 30%;
+  margin-left: 10px;
+}
+.no-header-container {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.pop-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.close-button {
+  background-color: white;
+  border: 0px;
+  align-self: flex-end;
+  margin: 20px;
+}
+.close {
+  width: 20px;
+  height: 20px;
+}
+.home-about-popup-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-button {
+  border: 0px;
+  background-color: white;
+}
+.menu {
+  width: 20px;
+  height: 20px;
 }
