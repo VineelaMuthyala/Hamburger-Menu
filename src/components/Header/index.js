@@ -25,28 +25,28 @@ class Header extends Component {
           modal
           trigger={
             <button className="menu-button" type="button">
-              <GiHamburgerMenu />
+              <GiHamburgerMenu className="menu" />
             </button>
           }
         >
           {close => (
-            <div>
+            <div className="no-header-container">
               <button
-                className="close-btn"
+                className="close-button"
                 type="button"
                 onClick={() => close()}
               >
-                <IoMdClose />
+                <IoMdClose className="close" />
               </button>
               <div className="pop-up-container">
                 <div>
-                  <Link to="/" className="home-popup-container">
+                  <Link to="/" className="home-about-popup-container">
                     <AiFillHome />
                     <p>Home</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/about" className="home-popup-container">
+                  <Link to="/about" className="home-about-popup-container">
                     <BsInfoCircleFill />
                     <p>About</p>
                   </Link>
