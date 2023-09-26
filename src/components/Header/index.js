@@ -24,34 +24,40 @@ class Header extends Component {
         <Popup
           modal
           trigger={
-            <button className="menu-button" type="button">
+            <button
+              className="menu-button"
+              type="button"
+              data-testid="hamburgerIconButton"
+            >
               <GiHamburgerMenu className="menu" />
             </button>
           }
+          className="popup-content"
         >
           {close => (
             <div className="no-header-container">
               <button
                 className="close-button"
                 type="button"
+                data-testid="closeButton"
                 onClick={() => close()}
               >
                 <IoMdClose className="close" />
               </button>
-              <div className="pop-up-container">
-                <div>
+              <ul className="pop-up-container">
+                <li>
                   <Link to="/" className="home-about-popup-container">
                     <AiFillHome />
                     <p>Home</p>
                   </Link>
-                </div>
-                <div>
+                </li>
+                <li>
                   <Link to="/about" className="home-about-popup-container">
                     <BsInfoCircleFill />
                     <p>About</p>
                   </Link>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           )}
         </Popup>
